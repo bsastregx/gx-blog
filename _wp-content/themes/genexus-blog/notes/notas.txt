@@ -1,0 +1,121 @@
+515 palabras promedio
+180 posts
+515 * 180 = 92,700 -> 180 euros
+
+key production: iWLgqnOfyI
+
+Updraft or All In One WP Migration
+
+/*******************************/
+
+sass --watch css/styles.scss style.css 
+
+Javascript preparation
+https://www.udemy.com/course/become-a-wordpress-developer-php-javascript/learn/lecture/27482276#questions
+
+Settings
+https://www.udemy.com/course/become-a-wordpress-developer-php-javascript/learn/lecture/26880724#overview
+
+/*******************************
+TO DO
+*******************************/
+- quitar las imagenes innecesarias de /assets
+- escapar todos los links, html, y attributos.
+- revisar donde poner wp_reset
+- Crear una pagina que muestre TODOS los posts, con un boton por cada post para editarlo, y warnings si tienen mas de una categoria o les falta meta description.
+- Investigar el filtrado de los comentarios.
+- Cambiarle el color del corazon del like a rosado
+- Ajustar los videos en el single post para que no se excedan del ancho disponible.
+- Probar plugin wp-ulike : https://wordpress.org/plugins/wp-ulike/
+- Poner la featured image en la nota abierta
+- Probar otro contador de vistas para el single post
+
+
+/*******************************
+JSON
+*******************************/
+http://genexus-blog-nuevo.local/wp-json/wp/v2/posts?per_page=9
+
+traer imagenes
+http://genexus-blog-nuevo.local/wp-json/wp/v2/posts?per_page=9&_embed
+
+search
+http://genexus-blog-nuevo.local/wp-json/wp/v2/posts?search=ai
+
+categories
+http://genexus-blog-nuevo.local/es_ES/wp-json/wp/v2/categories
+http://genexus-blog-nuevo.local/en_US/wp-json/wp/v2/categories
+
+idioma
+http://genexus-blog-nuevo.local/en_US/wp-json/wp/v2/posts?per_page=9
+http://genexus-blog-nuevo.local/es_ES/wp-json/wp/v2/posts?per_page=9
+
+custom post
+http://genexus-blog-nuevo.local/wp-json/wp/v2/posts/66520
+
+post thumbnail
+http://genexus-blog-nuevo.local/wp-json/custom_thumbnail/post/66520
+
+custom REST API
+http://genexus-blog-nuevo.local/wp-json/genexus/v1/posts
+http://genexus-blog-nuevo.local/en_US/wp-json/genexus/v1/posts
+http://genexus-blog-nuevo.local/wp-json/genexus/v1/posts
+http://genexus-blog-nuevo.local/wp-json/genexus/v1/posts?per_page=2
+http://genexus-blog-nuevo.local/en_US/wp-json/genexus/v1/posts?per_page=2
+
+
+/*******************************
+PARA HACER EN EL SITIO EN VIVO
+*******************************/
+- Activar el nuevo tema
+- Instalar ACF en mu-plugins
+- Importar los campos de ACF
+- Definir los colores de las categorias
+- Crear pagina de documentacion
+- Para todos los usuarios: que el nombre publico sea {Nombre Apellido}
+- Instalar Regenerate Thumbnails y regenerar las imagenes
+- pasar a mu-plugins los plugins necesarios.
+- borrar WP Theme Test
+- Borrar los estilos de Appereance > Additional CSS
+- Desactivar el modulo de comentarios de jetpack y el de likes
+- mejorar la seguridad
+- Limitar la cantidad de comentarios a dos niveles ->  Enable threaded (nested) comments -> 2 : /wp-admin/options-discussion.php
+- desactivar la opcion "Comment author must fill out name and email" para que no haya que ingresarlos obligatoriamente.
+- Agregar la info de los autores: cargo, frase descriptiva, linkedin y twitter.
+- Instlar simple google recaptcha para los comentarios
+- Instalar plugin para poder subir svgs (HECHO)
+- Configurar multilanguague para que el shortcode solo muestre los titulos
+- Borrar los estilos originales del multilanguage switcher
+- Instalar y configurar wp-ulike
+- Instalar y configurar Post Views Counter
+
+/*******************************
+COLORES
+*******************************/
+
+Design:
+Background: #FBD3F5
+Text Color: #A54095
+
+Events:
+Background: #BFE9D3
+Text Color: #187C48
+
+General Interest:
+Background: #FFD6DE
+Text Color: #D9506C
+
+GeneXus Platform:
+Background: #FFE0D9
+Text Color:  #FF6245
+
+Software Development:
+Background: #F3E9FA
+Text Color: #6C48C9
+
+/*************************************
+WORDRESS COMMENTS VS JETPACK COMMENTS
+*************************************/
+
+Claudia Murialdo
+Marcos Crispino

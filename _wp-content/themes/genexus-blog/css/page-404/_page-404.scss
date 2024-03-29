@@ -1,0 +1,67 @@
+body.error404 {
+  .navbar--main {
+    display: none;
+  }
+  .four04 {
+    position: fixed;
+    left: 50%;
+    top: calc(50vh + 130px);
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    &-container {
+      text-align: center;
+      position: relative;
+    }
+    &-image {
+      width: 190px;
+      margin-bottom: var(--spacing-m);
+      position: absolute;
+      transform: translate(-50%, -200px);
+      z-index: 1;
+      animation-name: floatup;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out;
+    }
+    &-text-primary {
+      font-size: var(--font-size-l);
+      font-family: var(--font-titles);
+      margin-bottom: 0;
+      line-height: 1.6em;
+    }
+    &-text-secondary {
+      margin-bottom: 40px;
+    }
+  }
+  @keyframes floatup {
+    from {
+      top: 10px;
+    }
+    to {
+      top: 20px;
+    }
+  }
+  .social-networks,
+  .back-to-top-container,
+  .record-audio {
+    display: none;
+  }
+}
+
+@mixin Responsive404 {
+  body.error404 {
+    .four04 {
+      top: calc(50vh - 10px);
+    }
+  }
+}
+body.mobile {
+  @include Responsive404;
+}
+@media only screen and (max-width: 767px) {
+  @include Responsive404;
+}

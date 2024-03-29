@@ -1,0 +1,30 @@
+.position-relative {
+  position: relative;
+}
+.m-0 {
+  margin: 0;
+}
+.z-index-10 {
+  z-index: 10 !important;
+}
+.z-index-15 {
+  z-index: 15 !important;
+}
+.hidden {
+  display: none !important;
+}
+
+@mixin ResponsiveUtilities {
+  .z-index-10-mobile {
+    z-index: 10 !important;
+  }
+  .z-index-15-mobile {
+    z-index: 15 !important;
+  }
+}
+body.mobile {
+  @include ResponsiveUtilities;
+}
+@media only screen and (max-width: 767px) {
+  @include ResponsiveUtilities;
+}

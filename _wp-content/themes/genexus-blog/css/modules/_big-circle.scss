@@ -1,0 +1,12 @@
+.big-circle {
+  border: 14px solid var(--color-white);
+  $imageSize: 130px;
+  width: $imageSize;
+  height: $imageSize;
+  border-radius: calc(#{$imageSize} / 2);
+  overflow: hidden;
+  background-color: var(--color-medium-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

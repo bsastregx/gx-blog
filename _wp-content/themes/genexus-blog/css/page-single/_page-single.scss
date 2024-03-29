@@ -1,0 +1,174 @@
+body.single {
+  .main {
+    br {
+      display: none;
+    }
+    b {
+      font-family: var(--font-text-medium);
+    }
+    div[id*="attachment"] {
+      //Prevent image attachment overflowing the content box.
+      max-width: 100% !important;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .featured-image-container {
+      border-radius: var(--border-radius-s);
+      overflow: hidden;
+      font-size: 0;
+      margin-bottom: var(--spacing-m);
+    }
+    .destacado {
+      font-family: var(--font-text-medium);
+      border-left: 1px solid var(--color-black);
+      padding-left: var(--spacing-m);
+    }
+    > .container {
+      max-width: 584px;
+    }
+    .author-reading-time {
+      display: flex;
+      gap: var(--spacing-s);
+      margin-bottom: var(--spacing-m);
+      align-items: center;
+
+      .reading-time {
+        color: var(--color-gray);
+        font-size: var(--font-size-xs);
+        font-family: var(--font-text-medium);
+        display: flex;
+        align-items: center;
+
+        .fa-clock {
+          font-size: var(--font-size-m);
+          margin-right: var(--spacing-xs);
+        }
+      }
+    }
+    .main-title {
+      margin-top: var(--spacing-m);
+    }
+    .the-content {
+      margin-bottom: var(--spacing-s);
+
+      //LISTS
+      ol,
+      ul {
+        margin-bottom: var(--spacing-m);
+        li {
+          margin-bottom: var(--spacing-s);
+          line-height: $line-height;
+          position: relative;
+          &::before {
+            position: absolute;
+          }
+        }
+      }
+      ul {
+        li {
+          padding-left: 16px;
+          &::before {
+            content: "";
+            width: 4px;
+            height: 4px;
+            background-color: var(--color-black);
+            display: inline-block;
+            left: 0;
+            top: 10px;
+          }
+        }
+      }
+      ol {
+        list-style-position: inside;
+        counter-reset: counter;
+        li {
+          padding-left: 20px;
+          counter-increment: counter;
+          &::before {
+            content: counter(counter);
+            font-family: var(--font-text-medium);
+            left: 0;
+          }
+        }
+      }
+
+      & > :last-child {
+        margin-bottom: 0;
+      }
+      a {
+        font-family: var(--font-text-medium);
+        text-decoration: underline;
+        color: var(--color-link);
+      }
+    }
+    .post__footer {
+      margin-bottom: var(--spacing-l);
+
+      .tags-container {
+        margin-bottom: var(--spacing-m);
+      }
+      .share-this-note {
+        display: inline-block;
+        font-size: var(--font-size-xs);
+        color: var(--color-medium-gray);
+        margin-bottom: var(--spacing-xs);
+      }
+    }
+  }
+  #related-posts {
+    padding-bottom: var(--spacing-l);
+  }
+  //mega destacado
+  .mega-destacado-titulo {
+    margin-bottom: 0;
+    margin-top: var(--spacing-l);
+    padding: var(--spacing-xs);
+    background-color: var(--color-light-blue);
+    color: var(--color-dark-blue);
+    font-family: var(--font-titles);
+    text-align: center;
+    width: 100%;
+    border-top-left-radius: var(--border-radius-xs);
+    border-top-right-radius: var(--border-radius-xs);
+  }
+  .mega-destacado-texto {
+    padding: var(--spacing-m);
+    color: var(--color-gray);
+    text-align: center;
+    border: 1px solid var(--color-gray-alternative);
+    border-bottom-left-radius: var(--border-radius-xs);
+    border-bottom-right-radius: var(--border-radius-xs);
+    border-top: 0;
+    margin-bottom: var(--spacing-l);
+  }
+}
+
+/*******************************
+RESPONSIVE
+*******************************/
+
+@mixin ResponsiveSingle {
+  body.single {
+    .main {
+      .post__footer {
+        .post-info-social-container {
+          flex-direction: column;
+          align-items: baseline;
+          gap: var(--spacing-xs);
+        }
+      }
+    }
+    #related-posts {
+      padding-bottom: 0;
+    }
+  }
+}
+body.mobile {
+  @include ResponsiveSingle;
+}
+
+@media only screen and (max-width: 767px) {
+  @include ResponsiveSingle;
+}

@@ -1,0 +1,310 @@
+[
+    {
+        "key": "group_619de94692b94",
+        "title": "Author",
+        "fields": [
+            {
+                "key": "field_619deb044282c",
+                "label": "Position",
+                "name": "position",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Compay position.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_619e6e4526ae5",
+                "label": "Phrase English",
+                "name": "phrase_english",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "Add a phrase that identifies you (english).",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": ""
+            },
+            {
+                "key": "field_61ad4d4071798",
+                "label": "Phrase Spanish",
+                "name": "phrase_spanish",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "Add a phrase that identifies you (spanish).",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": ""
+            },
+            {
+                "key": "field_61ad4d8c6ba37",
+                "label": "Phrase Portuguese",
+                "name": "phrase_portuguese",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "Add a phrase that identifies you (portuguese).",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "user_role",
+                    "operator": "==",
+                    "value": "all"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_618d811376166",
+        "title": "Categories",
+        "fields": [
+            {
+                "key": "field_618d813d3b5bf",
+                "label": "Category Color",
+                "name": "category_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "This is the color for the category tag.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string"
+            },
+            {
+                "key": "field_618eacb9e5a0b",
+                "label": "Category Background Color",
+                "name": "category_background_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "This is the background color fot the category tag.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string"
+            },
+            {
+                "key": "field_61a0507722431",
+                "label": "Category Icon",
+                "name": "category_icon",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "This image appears above the title, in the category page header area.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "svg"
+            },
+            {
+                "key": "field_61ac1c333c118",
+                "label": "Category Icon mobile",
+                "name": "category_icon_mobile",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "This image appears above the title, in the category page header area (only in mobile).",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "svg"
+            },
+            {
+                "key": "field_61a05121cece2",
+                "label": "Category Header",
+                "name": "category_header",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "This is the background image for the category header. The size has to be 1920px x 490px.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": 1920,
+                "min_height": 490,
+                "min_size": "",
+                "max_width": 1920,
+                "max_height": 490,
+                "max_size": "",
+                "mime_types": "svg"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "taxonomy",
+                    "operator": "==",
+                    "value": "category"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_618eaaf63acdd",
+        "title": "Post",
+        "fields": [
+            {
+                "key": "field_61913c20b7e6a",
+                "label": "Ocultar Imagen Destacada",
+                "name": "ocultar_imagen_destacada",
+                "aria-label": "",
+                "type": "checkbox",
+                "instructions": "Oculta la imagen destacada en la grilla de posts. La muestra solo si es un post mega destacado.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "ocultar": "ocultar"
+                },
+                "allow_custom": 0,
+                "default_value": [],
+                "layout": "vertical",
+                "toggle": 0,
+                "return_format": "value",
+                "save_custom": 0,
+                "custom_choice_button_text": "Add new choice"
+            },
+            {
+                "key": "field_64fd04ea00fcf",
+                "label": "Sticky Main",
+                "name": "sticky_main",
+                "aria-label": "",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Posiciona a este post como sticky principal",
+                "default_value": 0,
+                "ui": 0,
+                "ui_on_text": "",
+                "ui_off_text": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "side",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    }
+]

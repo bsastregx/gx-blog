@@ -1,0 +1,11 @@
+.button {
+  @include button;
+}
+
+body.mobile {
+  .button {
+    &:hover {
+      transform: scale(1);
+    }
+  }
+}

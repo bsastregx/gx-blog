@@ -1,0 +1,59 @@
+.pagination {
+  margin-top: var(--spacing-l);
+  display: flex;
+  gap: var(--spacing-xs);
+  flex-wrap: wrap;
+
+  &__pag {
+    cursor: pointer;
+    $size: 30px;
+    width: $size;
+    height: $size;
+    border-radius: calc(#{$size} / 2);
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-black);
+
+    &--active {
+      background-color: var(--color-pink);
+      color: var(--color-white);
+    }
+    &:hover {
+      transform: scale(1.2, 1.2);
+    }
+  }
+  &--with-slider {
+    display: block;
+    width: 175px;
+    margin-left: 25px;
+
+    .carousel-cell {
+      //width: 35px; /* full width */
+      width: calc(20% - 3px); /* full width */
+      height: 40px; /* height of carousel */
+      margin-right: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .flickity-prev-next-button.previous {
+      left: -30px;
+    }
+    .flickity-prev-next-button.next {
+      right: -30px;
+    }
+    .flickity-prev-next-button {
+      width: 20px;
+    }
+    .flickity-button {
+      background-color: transparent;
+      color: var(--color-pink);
+    }
+    .flickity-button:focus {
+      box-shadow: none;
+    }
+  }
+}

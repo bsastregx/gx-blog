@@ -1,0 +1,69 @@
+.subscribe-banner {
+  height: 340px;
+  background-color: var(--color-light-gray);
+  display: flex;
+  align-items: center;
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  &__left,
+  &__right {
+    display: flex;
+    align-items: center;
+    &__wrapper {
+    }
+  }
+  &__inner-container {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-gap: var(--spacing-l);
+    max-width: 670px;
+  }
+  &__title {
+    max-width: 250px;
+    line-height: 1.15em;
+    margin-bottom: var(--spacing-m);
+  }
+  &__description {
+    color: var(--color-gray);
+    max-width: 370px;
+    margin-bottom: 0;
+  }
+}
+
+/*******************************
+RESPONSIVE
+*******************************/
+
+@mixin Responsive {
+  .subscribe-banner {
+    height: auto;
+
+    .container {
+    }
+    &__left,
+    &__right {
+      &__wrapper {
+      }
+    }
+    &__inner-container {
+      display: block;
+      padding-top: 90px;
+      padding-bottom: var(--spacing-l);
+      max-width: 220px;
+      margin: 0 auto;
+    }
+    &__title {
+    }
+    &__description {
+    }
+  }
+}
+body.mobile {
+  @include Responsive;
+}
+@media only screen and (max-width: 767px) {
+  @include Responsive;
+}

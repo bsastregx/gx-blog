@@ -1,0 +1,170 @@
+html {
+  font-family: var(--font-text);
+  font-size: var(--font-size-m);
+  line-height: 1.75em;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  opacity: 1;
+  transition: var(--transition-speed-ui) opacity;
+}
+body.body-hidden {
+  opacity: 0;
+}
+$line-height: 1.7em;
+
+strong {
+  font-family: var(--font-text-medium);
+}
+
+/*******************************
+TITLES
+*******************************/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-titles);
+  color: var(--color-black);
+  margin-bottom: var(--spacing-m);
+  a {
+    color: var(--color-black);
+    display: block;
+  }
+}
+.h1,
+h1 {
+  font-size: var(--font-size-xxl);
+  line-height: 1.25em;
+}
+.h2,
+h2 {
+  font-size: var(--font-size-xl);
+  line-height: 1.36em;
+}
+.h3,
+h3 {
+  font-size: var(--font-size-l);
+  line-height: 1.44em;
+}
+.h4,
+h4 {
+  font-size: var(--font-size-m);
+  line-height: 2.18em;
+}
+
+h1 a:hover {
+  color: var(--color-text-hover);
+}
+/*******************************
+LINK
+*******************************/
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+/*******************************
+PARAGRAPH
+*******************************/
+p {
+  color: var(--color-black);
+  font-size: var(--font-size-m);
+  line-height: 1.75em;
+  margin-bottom: var(--spacing-m);
+}
+/*******************************
+QUOTES
+*******************************/
+blockquote {
+  line-height: $line-height;
+  margin-bottom: var(--spacing-m);
+  color: var(--color-gray);
+  font-style: italic;
+
+  p {
+    color: var(--color-gray);
+  }
+}
+q {
+  color: var(--color-gray);
+  font-style: italic;
+}
+
+/*******************************
+SCROLLBAR
+*******************************/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  //box-shadow: inset 0 0 5px var(--color-gray);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bbb6b6;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gray);
+}
+
+/*******************************
+SELECTION
+*******************************/
+
+::-moz-selection {
+  background: var(--color-selection);
+}
+::selection {
+  background: var(--color-selection);
+}
+
+/*******************************
+OTHER
+*******************************/
+
+embed,
+iframe,
+object {
+  max-width: 100%;
+}
+/*******************************
+RESPONSIVE
+*******************************/
+
+@mixin generalResponsive {
+  .h1,
+  h1 {
+    font-size: 26px;
+    //line-height: 1.25em;
+  }
+  .h3,
+  h3 {
+    font-size: var(--font-size-l);
+  }
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  @include generalResponsive;
+}
+body.mobile {
+  @include generalResponsive;
+}

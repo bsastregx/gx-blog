@@ -1,0 +1,14 @@
+.categories-tags-container {
+  font-size: 0;
+  margin-bottom: var(--spacing-s);
+  .category-tag {
+    @include tag;
+    margin-right: var(--spacing-xs);
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

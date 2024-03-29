@@ -1,0 +1,183 @@
+body.category {
+  .header--main + * {
+    margin-top: 0;
+  }
+  .header {
+    height: 560px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .category-info-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+
+    .category-info__wrapper {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-left: var(--spacing-l);
+    }
+    .category-info {
+      display: flex;
+      &__icon {
+        margin-bottom: var(--spacing-xs);
+      }
+      &__name {
+        font-size: var(--font-size-xxl);
+        margin-bottom: 0;
+      }
+    }
+    &--mobile {
+      position: relative;
+      left: 0;
+      display: none;
+      transform: none;
+      justify-content: center;
+      margin-top: 0;
+      .category-info__wrapper {
+        margin-left: 0;
+      }
+      .category-info__name {
+        font-size: var(--font-size-xl);
+      }
+    }
+  }
+  .main {
+    padding-top: var(--section);
+  }
+  .secondary-title {
+    max-width: 300px;
+    margin: 0;
+  }
+
+  //change loader colors to match the category
+  &.category-design {
+    --color-software-development: #a54095;
+    --color-events: #a54095;
+    --color-general-interest: #a54095;
+    --color-genexus-platform: #a54095;
+  }
+  &.category-events {
+    --color-software-development: #187c48;
+    --color-design: #187c48;
+    --color-general-interest: #187c48;
+    --color-genexus-platform: #187c48;
+  }
+  &.category-general-interest {
+    --color-software-development: #d9506c;
+    --color-design: #d9506c;
+    --color-events: #d9506c;
+    --color-genexus-platform: #d9506c;
+  }
+  &.category-genexus-platform {
+    --color-software-development: #ff6245;
+    --color-design: #ff6245;
+    --color-events: #ff6245;
+    --color-general-interest: #ff6245;
+  }
+  &.category-software-development {
+    --color-design: #6c48c9;
+    --color-events: #6c48c9;
+    --color-general-interest: #6c48c9;
+    --color-genexus-platform: #6c48c9;
+  }
+
+  //change pagination color to match category
+  &.category-design {
+    .pagination {
+      .pagination__pag {
+        color: var(--color-design);
+      }
+      .pagination__pag--active {
+        background-color: var(--bgcolor-design);
+      }
+    }
+  }
+  &.category-events {
+    .pagination {
+      .pagination__pag {
+        color: var(--color-events);
+      }
+      .pagination__pag--active {
+        background-color: var(--bgcolor-events);
+      }
+    }
+  }
+  &.category-general-interest {
+    .pagination {
+      .pagination__pag {
+        color: var(--color-general-interest);
+      }
+      .pagination__pag--active {
+        background-color: var(--bgcolor-general-interest);
+      }
+    }
+  }
+  &.category-genexus-platform {
+    .pagination {
+      .pagination__pag {
+        color: var(--color-genexus-platform);
+      }
+      .pagination__pag--active {
+        background-color: var(--bgcolor-genexus-platform);
+      }
+    }
+  }
+  &.category-software-development {
+    .pagination {
+      .pagination__pag {
+        color: var(--color-software-development);
+      }
+      .pagination__pag--active {
+        background-color: var(--bgcolor-software-development);
+      }
+    }
+  }
+}
+
+/*******************************
+RESPONSIVE
+*******************************/
+
+@mixin pageCategoryResponsive {
+  body.category {
+    .header {
+      height: auto;
+      background-image: none !important;
+    }
+    .navbar--main {
+      min-height: 150px;
+    }
+    .category-info-container {
+      &--desktop {
+        display: none;
+      }
+      &--mobile {
+        margin-top: 80px;
+        display: flex;
+      }
+    }
+    .main-title {
+      display: none;
+    }
+    .menu-item--live-search {
+      margin-top: 0;
+    }
+  }
+}
+body.mobile {
+  @include pageCategoryResponsive;
+}
+@media only screen and (max-width: 767px) {
+  @include pageCategoryResponsive;
+}
+@media only screen and (min-width: 768px) {
+  body.category {
+    .navbar--main {
+      background-color: transparent !important;
+    }
+  }
+}

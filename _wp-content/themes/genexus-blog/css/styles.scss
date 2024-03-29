@@ -1,0 +1,68 @@
+/*
+ Theme Name: GeneXus Blog
+ Author: GeneXus
+ Version: 1.0
+*/
+
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "utilities";
+@import "general";
+@import "fonts";
+@import "trash";
+@import "bootstrap-grid";
+@import "flickity";
+@import "bootstrap-grid-override";
+
+//MODULES
+@import "modules/back-to-top-desktop";
+@import "modules/big-circle";
+@import "modules/blog-author";
+@import "modules/button";
+@import "modules/card";
+@import "modules/categories-showcase";
+@import "modules/category-tag";
+@import "modules/featured-post";
+@import "modules/form-input-checkbox";
+@import "modules/form-input-email";
+@import "modules/form-input-search";
+@import "modules/form-input-submit";
+@import "modules/form-input-text";
+@import "modules/form-label";
+@import "modules/form-textarea";
+@import "modules/grid-3";
+@import "modules/header";
+@import "modules/live-search";
+@import "modules/mailerlite";
+@import "modules/post-separator";
+@import "modules/navbar";
+@import "modules/pagination";
+@import "modules/navbar-cards";
+@import "modules/pill";
+@import "modules/post";
+@import "modules/section";
+@import "modules/social-networks";
+@import "modules/spinner";
+@import "modules/subscribe-banner";
+@import "modules/tag";
+@import "modules/top-bar";
+@import "modules/traditional-search";
+@import "modules/ul-categories";
+
+//HOME
+@import "page-404/page-404";
+@import "page-author/page-author";
+@import "page-category/page-category";
+@import "page-home/featured-posts";
+@import "page-search/page-search";
+@import "page-single/page-single";
+@import "page-single/comments";
+@import "page-tag/page-tag";
+
+//PLUGINS OVERRIDE
+@import "plugins-override/multilanguage";
+@import "plugins-override/flickity";
+@import "plugins-override/wpulike";
+@import "plugins-override/page-views-count";
+@import "plugins-override/sharedaddy";

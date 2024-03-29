@@ -1,0 +1,35 @@
+- Eliminar ACF e instalar CMB2 en su lugar.
+Hay que limpiar los campos de ACG luego de desinstalarlo.
+
+Campos actuales:
+
+* Author
+key: group_619de94692b94
+location: Users
+fields:
+- position
+- phrase_english
+- phrase_spanish
+- phrase_portuguese
+
+* Categories
+key: group_618d811376166
+location: Categories
+fields:
+- category_color
+- category_background_color
+- category_icon
+- category_icon_mobile
+- category_header
+
+* Post
+key: group_618eaaf63acdd
+location: Posts
+fields:
+- destacado
+- mega_destacado 
+- ocultar_imagen_destacada
+
+------------------------------------------------------------------------
+
+- Pasar las traducciones a otro plugin

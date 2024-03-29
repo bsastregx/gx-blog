@@ -47,3 +47,16 @@ wp-config.php
 # uncomment the next line
 #/wp-content/themes
 .DS_Store
+
+#Temporary
+/_wp-content/index.php
+/_wp-content/languages
+/_wp-content/plugins/index.php
+/_wp-content/themes/index.php
+/_wp-content/uploads
+/_wp-content/_uploads
+##themes
+/_wp-content/themes/*
+/wp-content/themes/*
+!/_wp-content/themes/genexus-blog*
+!/wp-content/themes/genexus-blog*

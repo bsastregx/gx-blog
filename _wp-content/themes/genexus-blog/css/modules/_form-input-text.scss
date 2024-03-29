@@ -1,0 +1,10 @@
+input[type="text"] {
+  @include form-element;
+
+  &.light {
+    padding-top: 8.5px;
+    padding-bottom: 8.5px;
+    background-color: transparent;
+    border-radius: var(--border-radius-xs);
+  }
+}
