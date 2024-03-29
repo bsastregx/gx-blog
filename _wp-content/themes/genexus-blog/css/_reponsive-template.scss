@@ -1,0 +1,30 @@
+/*******************************
+RESPONSIVE
+*******************************/
+
+@mixin Responsive {
+    
+}
+body.mobile {
+  @include Responsive;
+}
+@media only screen and (max-width: 767px) {
+  @include Responsive;
+}
+
+
+@media only screen and (max-width: 1399px) {
+  
+}
+@media only screen and (max-width: 1199px) {
+  
+}
+@media only screen and (max-width: 991px) {
+ 
+}
+@media only screen and (width: 768px) {
+  //Tablet
+}
+@media only screen and (max-width: 767px) {
+  @include Responsive;
+}

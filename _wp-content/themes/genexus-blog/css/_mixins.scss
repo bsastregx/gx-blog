@@ -1,0 +1,62 @@
+@mixin form-element {
+  font-family: var(--font-titles);
+  font-size: var(--font-size-s);
+  width: 100%;
+  padding: 13.5px var(--spacing-s);
+  display: inline-block;
+  border: 0;
+  border-radius: 0;
+  background-color: var(--color-light-gray);
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--color-gray-alternative);
+
+  &:focus {
+    outline-color: var(--color-light-pink);
+  }
+}
+
+@mixin tag {
+  font-family: var(--font-text);
+  font-size: var(--font-size-xs);
+  background-color: var(--color-light-gray);
+  color: var(--color-gray);
+  padding: 4px 10px;
+  border-radius: var(--border-radius-xxs);
+  display: inline-block;
+}
+
+@mixin button {
+  font-family: var(--font-titles);
+  padding: 13px 31px;
+  border-radius: var(--border-radius-l);
+  border: 0;
+  background-color: var(--color-light-gray);
+  cursor: pointer;
+  font-size: var(--font-size-m);
+  color: var(--color-white);
+  background-color: var(--color-pink);
+  display: inline-block;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+@mixin back-to-top {
+  height: 34px;
+  width: 34px;
+  border-radius: 17px;
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: var(--font-size-xs);
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

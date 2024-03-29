@@ -1,0 +1,36 @@
+.top-bar {
+  background-color: var(--color-dark-violet);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-titles);
+  font-size: var(--font-size-s);
+  height: 60px;
+  text-decoration: none;
+
+  &__arrow {
+    color: var(--color-gray);
+    transition: var(--transition-speed-ui) left;
+    position: relative;
+    left: 10px;
+  }
+
+  &:hover {
+    .top-bar__arrow {
+      left: 20px;
+    }
+  }
+}
+
+@mixin Responsive {
+  .top-bar {
+    display: none;
+  }
+}
+body.mobile {
+  @include Responsive;
+}
+@media only screen and (max-width: 767px) {
+  @include Responsive;
+}

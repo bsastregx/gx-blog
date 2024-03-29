@@ -1,0 +1,91 @@
+/*******************************
+COLOR VARIABLES
+*******************************/
+:root {
+  --color-white: #fff;
+  --color-black: #212121;
+  --color-dark-violet: #321e41;
+  --color-gray: #888484;
+  --color-medium-gray: #acacac;
+  --color-light-gray: #f8f8f8;
+  --color-gray-alternative: #d8d8d8;
+  --color-pink: #fa3263;
+  --color-light-pink: #fee6ec;
+  --color-selection: #ebebfe;
+  --color-text-hover: #5a5f63;
+  --color-link: #6aaab8;
+  --color-light-blue: #D5E0FA;
+  --color-dark-blue: #464AAE;
+
+
+  //CATEGORIES
+  --color-design: #a54095;
+  --bgcolor-design: #fbd3f5;
+
+  --color-events: #187c48;
+  --bgcolor-events: #bfe9d3;
+
+  --color-general-interest: #d9506c;
+  --bgcolor-general-interest: #ffd6de;
+
+  --color-genexus-platform: #ff6245;
+  --bgcolor-genexus-platform: #ffe0d9;
+
+  --color-software-development: #6c48c9;
+  --bgcolor-software-development: #f3e9fa;
+}
+
+/*******************************
+GENERAL
+*******************************/
+:root {
+  --color-link: #6667c3;
+}
+
+/*******************************
+FONTS
+*******************************/
+:root {
+  --font-text: "Rubik Regular", sans-serif;
+  --font-text-medium: "Rubik Medium", sans-serif;
+  --font-titles: "Graphik Semibold", sans-serif;
+  --font-size-xxs: 10px;
+  --font-size-xs: 12px;
+  --font-size-s: 14px;
+  --font-size-m: 16px;
+  --font-size-l: 18px;
+  --font-size-xl: 22px;
+  --font-size-xxl: 30px;
+  --font-size-xxxl: 36px;
+  --font-size-huge: 40px;
+}
+
+/*******************************
+TRANSITIONS
+*******************************/
+:root {
+  --transition-speed-ui: 0.25s;
+  --transition-speed-toggle: 0.5s;
+}
+
+/*******************************
+BORDER RADIUS
+*******************************/
+:root {
+  --border-radius-xxs: 2px;
+  --border-radius-xs: 5px;
+  --border-radius-s: 8px;
+  --border-radius-l: 22px;
+}
+
+/*******************************
+SPACING
+*******************************/
+:root {
+  --spacing-xs: 8px;
+  --spacing-s: 16px;
+  --spacing-m: 32px;
+  --spacing-l: 64px;
+  --spacing-xl: 128px;
+  --section: var(--spacing-xl);
+}

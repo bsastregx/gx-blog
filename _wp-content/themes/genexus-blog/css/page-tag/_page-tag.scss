@@ -1,0 +1,16 @@
+body.tag {
+  .main-title {
+    margin-bottom: 90px;
+  }
+  .pagination {
+    .pagination__pag {
+      color: var(--color-link);
+    }
+    .pagination__pag--active {
+      background-color: #e2e2ff;
+    }
+  }
+  .back-to-top-container {
+    display: none;
+  }
+}

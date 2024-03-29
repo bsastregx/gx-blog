@@ -1,0 +1,33 @@
+.sharedaddy {
+  .sd-title {
+    &:before {
+      display: none !important;
+    }
+  }
+  .sd-sharing {
+    margin-bottom: 0;
+  }
+  .sd-content ul li {
+    margin-bottom: 0;
+    margin-right: var(--spacing-xs);
+  }
+  .sd-social-icon {
+    .sd-button {
+      padding: 5px !important;
+      background-color: var(--color-light-gray) !important;
+      &:before {
+        color: var(--color-medium-gray);
+      }
+      &:hover {
+        background-color: var(--color-pink) !important;
+        opacity: 1 !important;
+        &:before {
+          color: var(--color-white);
+        }
+      }
+    }
+  }
+}
+.jp-sharing-input-touch .sd-content ul li {
+  padding-left: 0 !important;
+}

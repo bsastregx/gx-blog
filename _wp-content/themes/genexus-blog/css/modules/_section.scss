@@ -1,0 +1,16 @@
+.section {
+    margin-bottom: var(--section);
+}
+
+
+@mixin Responsive {
+    :root {
+        --section: var(--spacing-l);
+      }
+}
+body.mobile {
+  @include Responsive;
+}
+@media only screen and (max-width: 767px) {
+  @include Responsive;
+}
