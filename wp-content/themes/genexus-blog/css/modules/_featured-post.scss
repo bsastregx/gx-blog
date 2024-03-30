@@ -39,6 +39,20 @@
   }
 }
 
+.empty-state {
+  border: var(--border-radius-xxs) solid var(--color-gray-alternative);
+  border-radius: var(--border-radius-xs);
+  padding: var(--spacing-m);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .featured-post__title {
+    margin-bottom: 0;
+  }
+}
+
 /*******************************
 RESPONSIVE
 *******************************/
