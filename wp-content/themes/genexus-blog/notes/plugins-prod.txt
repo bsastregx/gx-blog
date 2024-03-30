@@ -1,0 +1,9 @@
+/plugins/0.5.5 -> Page Optimize
+/plugins/1.6.3 -> Classic Editor
+/plugins/1.8.4 -> Layout Grid Block
+/plugins/2.5.3 -> AMP
+/plugins/3.1.7 -> Page Builder Gutenberg Blocks
+/plugins/4.17250 -> WordPress.com Editing Toolkit
+/plugins/13.3-a.9 -> Jetpack
+/plugins/18.0.0 -> Gutenberg
+/plugins/22.3 -> Yoast SEO
