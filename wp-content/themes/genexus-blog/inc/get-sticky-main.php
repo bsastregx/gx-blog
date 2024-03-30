@@ -8,6 +8,7 @@
                 'meta_key' => 'sticky_main',
                 'meta_value' => '1',
                 'orderby' => 'date',
+                'suppress_filters' => false
             ));    
             if(count($sticky_main) === 0) {
                 //There is no sticky_main post. Try to get a sticky post then. If there is no sticky post neither, get_stickies will return a common post.
