@@ -1,7 +1,7 @@
 <?php
-    $sticy_main_post = $args[0];
+    $sticky_main_post = $args[0];
     global $post;
-    $post = $sticy_main_post;
+    $post = $sticky_main_post;
     setup_postdata($post);
 
     $id = $post->ID;
