@@ -39,4 +39,12 @@ Los fields estan guardados en la tabla wp-posts ("acf-field-group" y "acf-field"
 
 3. Cambiar de tema (pasarnos al wp-content nuevo)
 
+# TAREAS PENDIENTES
+
 - Arreglar "JetPack's Photon module breaks features built in WP Retina 2x (as Photos moves the files away). A common and better alternative to Photon is to use MaxCDN (very popular), CloudFlare or Fastly."
+
+- Averiguar si sirve tener "Gutenberg", ya que esta desactivado, y aún así puedo editar los posts con el editor de bloques.
+
+- Layout grid (se puede borrar?)
+
+- WordPress.com Editing Toolkit (Se puede borrar?)
