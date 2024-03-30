@@ -48,3 +48,33 @@ Los fields estan guardados en la tabla wp-posts ("acf-field-group" y "acf-field"
 - Layout grid (se puede borrar?)
 
 - WordPress.com Editing Toolkit (Se puede borrar?)
+
+# PASOS WPML
+
+0. Instalar y activar OTGS Installer, luego:
+
+- WPML Multilingual CMS
+- String Translation
+- WPML SEO (Yoast)
+
+1. Elegir "English" como default language, luego spanish y portuguese como secundarios.
+
+2. **URL Format**:
+   Seleccionar el primero "Different languages in directories"
+
+3. **Translation Mode**:
+
+   - Elegir "Translate what you choose"
+   - Elegir luego "Users of this site" y asignar a los traductores.
+
+---
+
+## Siguientes pasos con WPML:
+
+1. WPML → Languages. (aca se puede configurar el language switcher, que debe aparecer al menos en el header)
+
+2. Activar "Category Translation" para la traduicción de las categorías:
+   /wp-admin/admin.php?page=sitepress-multilingual-cms%2Fmenu%2Ftaxonomy-translation.php&taxonomy=category
+
+3. En WPML > Settings > Translation Editor :
+   Las traducciones deben hacerse con el traductor clasico.
