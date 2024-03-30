@@ -48,15 +48,37 @@ wp-config.php
 #/wp-content/themes
 .DS_Store
 
-#Temporary
-/_wp-content/index.php
-/_wp-content/languages
-/_wp-content/plugins/index.php
-/_wp-content/themes/index.php
-/_wp-content/uploads
-/_wp-content/_uploads
-##themes
-/_wp-content/themes/*
-/wp-content/themes/*
-!/_wp-content/themes/genexus-blog*
-!/wp-content/themes/genexus-blog*
+
+# /////////////////////////
+# CUSTOM IGNORES BRUNO
+# /////////////////////////
+
+local-xdebuginfo.php
+
+# Ignorar plugins manejados por wordpress.com
+/wp-content/plugins/0.5.5
+/wp-content/plugins/1.6.3
+/wp-content/plugins/1.8.4
+/wp-content/plugins/13.3-a.9
+/wp-content/plugins/18.0.0
+/wp-content/plugins/2.5.3
+/wp-content/plugins/22.3
+/wp-content/plugins/3.1.7
+/wp-content/plugins/4.17250
+/wp-content/plugins/5.3.2
+/wp-content/plugins/13.3-a.9
+/wp-content/plugins/18.0.0
+/wp-content/plugins/22.3
+
+/wp-content/plugins/akismet
+/wp-content/plugins/amp
+/wp-content/plugins/classic-editor
+/wp-content/plugins/coblocks
+/wp-content/plugins/gutenberg
+/wp-content/plugins/jetpack
+/wp-content/plugins/layout-grid
+/wp-content/plugins/page-optimize
+/wp-content/plugins/wordpress-seo
+/wp-content/plugins/full-site-editing
+
+
