@@ -150,11 +150,15 @@ if(is_category()){
                                     </form>
                                 </div>
                             </li>
-                            <li class="menu-item menu-item--has-card menu-item__language_switcher">
+                            <li class="menu-item menu-item--has-card">
+                                <?php $lang_details = apply_filters( 'wpml_post_language_details', NULL ); ?>
                                 <a class="menu-item__link">
-                                    Languages<i class="fas fa-chevron-down"></i></a>
-                                <div class="card-invisible" <i class="fas fa-globe"></i>
-                                    <?php echo do_shortcode('[multilanguage_switcher]') ?>
+                                    <i class="fas fa-globe"></i>    
+                                    <?php echo $lang_details["display_name"] ?>
+                                </a>
+                                <div class="card-invisible">
+                                <div class="card navbar__card card--short">
+                                    <?php echo do_shortcode('[wpml_language_selector_widget]') ?>
                                 </div>
                             </li>
                         </ul>

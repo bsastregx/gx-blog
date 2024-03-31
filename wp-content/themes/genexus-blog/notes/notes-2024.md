@@ -89,3 +89,6 @@ Los fields estan guardados en la tabla wp-posts ("acf-field-group" y "acf-field"
 - Recuperar tags:
   Artificial Intelligence
   Digital Transformation
+
+6. Agregar custom language switcher:
+   WPML > Languages > Custom language switchers

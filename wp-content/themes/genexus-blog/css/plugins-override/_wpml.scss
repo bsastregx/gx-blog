@@ -1,0 +1,56 @@
+.wpml-ls-legacy-list-vertical .wpml-ls-item:not(:last-child) {
+  margin-bottom: var(--font-size-xxl);
+}
+.wpml-ls-link {
+  color: var(--color-black);
+}
+div.wpml-ls-legacy-list-vertical a {
+  padding: 0;
+}
+
+/*******************************
+RESPONSIVE
+*******************************/
+@mixin navbarResponsive {
+  .mltlngg-lang-switch > li ul {
+    position: static;
+    display: block;
+  }
+  .mltlngg_switcher .mltlngg-lang-switch ul {
+    padding: 0;
+    box-shadow: none;
+    top: 0;
+  }
+  .mltlngg_switcher .mltlngg-lang-switch-names .mltlngg-lang-button-icons {
+    font-family: var(--font-text);
+  }
+  .mltlngg_switcher .mltlngg-lang-switch-names li > ul li {
+    margin-bottom: 0;
+    margin-top: var(--spacing-s);
+    &:last-child {
+      margin-bottom: var(--spacing-s);
+    }
+  }
+  .mltlngg-lang-switch > li ul {
+    position: relative !important;
+  }
+  .mltlngg_switcher {
+    padding-left: var(--spacing-s);
+    border-bottom: 1px solid transparent;
+  }
+  .mltlngg-lang-switch {
+    padding: 0 !important;
+    margin-bottom: var(--spacing-m);
+    line-height: 1.6em;
+  }
+  .mltlngg-lang-switch-names li,
+  .mltlngg_switcher .mltlngg-lang-switch-names .mltlngg-lang-button-icons {
+    font-size: var(--font-size-m);
+  }
+}
+body.mobile {
+  @include navbarResponsive;
+}
+@media only screen and (max-width: 767px) {
+  @include navbarResponsive;
+}
