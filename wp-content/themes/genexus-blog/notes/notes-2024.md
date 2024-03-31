@@ -74,7 +74,18 @@ Los fields estan guardados en la tabla wp-posts ("acf-field-group" y "acf-field"
 1. WPML → Languages. (aca se puede configurar el language switcher, que debe aparecer al menos en el header)
 
 2. Activar "Category Translation" para la traduicción de las categorías:
-   /wp-admin/admin.php?page=sitepress-multilingual-cms%2Fmenu%2Ftaxonomy-translation.php&taxonomy=category
+   /wp-admin/admin.php?page=sitepress-multilingual-cms%2Fmenu%2Ftaxonomy-translation.php&taxonomy=category y traducir slugs y titulos de categorias.
 
 3. En WPML > Settings > Translation Editor :
    Las traducciones deben hacerse con el traductor clasico.
+
+4. En WPML > Settings > Custom Term Meta Translation:
+
+   Los custom fields de las categorias (color, bg-color, header image etc) deben tomar los valores del idioma original (ingles). Para eso setear todos en: ¨Don't translate¨
+
+5. En WPML > Settings > Media Translation:
+   Chequear "Duplicate the featured images for translated content"
+
+- Recuperar tags:
+  Artificial Intelligence
+  Digital Transformation

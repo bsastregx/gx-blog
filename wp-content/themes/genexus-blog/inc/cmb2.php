@@ -89,25 +89,6 @@ function cmb2_meta_boxes() {
     ) );
 
     /*******************************
-    POST > MAIN
-    *******************************/
-    $prefix = 'gx_post_main_';
-    $cmb_post_main = new_cmb2_box( array(
-        'id'           => $prefix,
-        'title'        => __( 'CMB2 Custom Fields', 'cmb2' ),
-        'object_types' => array( 'post' ),
-        'context' => 'normal',
-        'priority' => 'high',
-    ) );
-    //Legacy URL
-    $cmb_post_main->add_field( array(
-        'name' => __( 'Legacy URL', 'cmb2' ),
-        'id'   => $prefix . 'legacy_url',
-        'type' => 'text_url',
-        'desc' => 'The legacy slug from this post.'
-    ) );
-
-    /*******************************
     POST > ASIDE
     *******************************/
     $prefix = 'gx_post_aside_';

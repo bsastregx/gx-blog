@@ -1,8 +1,8 @@
 <?php
 
 $category = $args[0];
-$cat_english_id = apply_filters( 'wpml_object_id', $category->term_id, 'category', FALSE, 'en');
-$cat_color = get_term_meta( $cat_english_id, 'gx_category_color', true );
+$cat_id = $category->cat_ID;
+$cat_color = get_term_meta( $cat_id, 'gx_category_color', true );
 
 if($cat_color == null) {
     $cat_color = "#D8D8D8";
@@ -14,3 +14,4 @@ if($cat_color == null) {
         <span class="ul-categories__text"><?php echo $category->name ?></span>
     </a>
 </li>
+
