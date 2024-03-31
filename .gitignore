@@ -54,6 +54,7 @@ wp-config.php
 # /////////////////////////
 
 local-xdebuginfo.php
+/_wp-content
 
 # Ignorar plugins manejados por wordpress.com
 /wp-content/plugins/0.5.5

@@ -121,5 +121,5 @@ add_action('after_body_open_tag', 'custom_content_after_body_open_tag');
 9.CMB2 CUSTOM FIELDS
 *******************************/
 require_once(__ROOT__.'/inc/cmb2.php');
-?>
 
+?>

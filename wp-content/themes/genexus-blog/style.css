@@ -4807,6 +4807,9 @@ body.mobile .button:hover {
   -webkit-box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.13);
   box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.13);
 }
+.card--short {
+  width: 150px !important;
+}
 
 .fa-long-arrow-alt-right {
   font-size: var(--font-size-l);
@@ -7075,64 +7078,16 @@ body.tag .back-to-top-container {
   display: none;
 }
 
-.mltlngg_switcher .mltlngg-lang-switch-names li,
-.mltlngg_switcher .mltlngg-lang-switch-names li > ul li {
-  background-color: transparent;
-  border: none;
-  padding: 0 !important;
-}
-.mltlngg_switcher .mltlngg-lang-switch-names > li ul {
-  width: 150px;
-}
-.mltlngg_switcher .mltlngg-lang-switch-names li > ul li {
+.wpml-ls-legacy-list-vertical .wpml-ls-item:not(:last-child) {
   margin-bottom: var(--font-size-xxl);
 }
-.mltlngg_switcher .mltlngg-lang-switch-names li > ul li:last-child {
-  margin-bottom: 0;
-}
-.mltlngg_switcher .mltlngg-lang-switch.mltlngg-lang-switch-names > li:after {
-  display: none;
-}
-.mltlngg_switcher ul ul {
-  border: none;
-}
-.mltlngg_switcher .mltlngg-lang-switch-names > li > a,
-.mltlngg_switcher .mltlngg-lang-switch-names > li > a:active,
-.mltlngg_switcher .mltlngg-lang-switch-names > li > a:hover {
-  color: var(--color-black);
-}
-.mltlngg_switcher .mltlngg-lang-switch ul {
-  border-radius: var(--border-radius-xs);
-  padding: 30px 30px;
-  -webkit-box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.13);
-  box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.13);
-  max-width: 150px;
-  z-index: 5;
-  right: 0;
-  top: 35px;
-}
-.mltlngg_switcher .mltlngg-lang-switch > li ul {
-  cursor: auto;
-}
-.mltlngg_switcher .mltlngg-lang-switch > li:before {
-  position: absolute;
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  content: "\f0ac";
-  margin-right: var(--spacing-xs);
-}
-.mltlngg_switcher .mltlngg-lang-switch > li > a {
-  padding-left: 22px;
-  margin-right: 0 !important;
-}
-.mltlngg_switcher .mltlngg-lang-switch-names .mltlngg-lang-button-icons {
-  font-family: var(--font-titles);
-  font-size: var(--font-size-s);
+
+.wpml-ls-link {
   color: var(--color-black);
 }
 
-.menu-item__language_switcher:hover .mltlngg-lang-switch > li ul {
-  display: block;
+div.wpml-ls-legacy-list-vertical a {
+  padding: 0;
 }
 
 /*******************************
