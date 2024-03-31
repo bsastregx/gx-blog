@@ -91,7 +91,7 @@ function cmb2_meta_boxes() {
     /*******************************
     POST > ASIDE
     *******************************/
-    $prefix = 'gx_post_aside_';
+    $prefix = 'gx_post_';
     $cmb_post_aside = new_cmb2_box( array(
         'id'           => $prefix,
         'title'        => __( 'CMB2 Custom Fields', 'cmb2' ),
@@ -102,7 +102,7 @@ function cmb2_meta_boxes() {
     //Make Super Sticky
     $cmb_post_aside->add_field( array(
         'name' => __( 'Super Sticky', 'cmb2' ),
-        'id'   => $prefix . 'super_sticky',
+        'id'   => $prefix . 'sticky_main',
         'type' => 'checkbox',
         'desc' => 'It will make this post be the first sticky, which takes the most prominence.'
     ) );

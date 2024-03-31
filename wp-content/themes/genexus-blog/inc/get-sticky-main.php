@@ -5,8 +5,8 @@
                 'numberposts' => -1,
                 'post_type' => 'post',
                 'post_status' => 'publish',
-                'meta_key' => 'sticky_main',
-                'meta_value' => '1',
+                'meta_key' => 'gx_post_sticky_main',
+                'meta_value' => 'on',
                 'orderby' => 'date',
                 'suppress_filters' => false
             ));    
