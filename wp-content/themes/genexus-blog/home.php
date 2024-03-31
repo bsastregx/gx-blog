@@ -19,9 +19,9 @@
                     /*******************************
                     STICKY MAIN POST 
                     *******************************/
+                    $sticky_main = get_sticky_main();
                     if($sticky_main === null) {
                       get_template_part('template-parts/empty', 'state', ["main-sticky-post"]);
-
                     } else {
                       array_push($excluded_posts_ids, $sticky_main->ID);
                       get_template_part('template-parts/post', 'sticky-main', [

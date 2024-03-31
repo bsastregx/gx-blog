@@ -92,3 +92,8 @@ Los fields estan guardados en la tabla wp-posts ("acf-field-group" y "acf-field"
 
 6. Agregar custom language switcher:
    WPML > Languages > Custom language switchers
+
+7. gx_aside_super_sticky tiene que quedar como "Copy" para que herede el valor.
+   WPML > Settings > Custom Term Meta Translation
+
+8-. Eliminar los meta-keys del tipo gx_post_aside_super_sticky
