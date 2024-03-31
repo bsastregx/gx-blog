@@ -2,15 +2,21 @@
 
 1. **Languages**:
    Seleccionar "English" como default langauge, y luego "Spanish" y "Portuguese" como "Translation languages".
+
 2. **URL Format**:
    Seleccionar el primero "Different languages in directories"
+
 3. **Register WPML**:
    Key para desarrollo: UZESDUGWA4
+
 4. **Translation Mode**:
+
    - Elegir "Translate what you choose"
    - Elegir luego "Users of this site" y asignar a los traductores.
+
 5. **Support**:
    Seleccionar "yes, send theme and plugins information..."
+
 6. **Plugins**:
    Seleccionar "String Translation"
 7. **Finish**
@@ -18,13 +24,19 @@
 ## Siguientes pasos:
 
 1. **Translation Management**:
+
    - Seleccionar "Translate" para todos los idiomas
    - Seleccionar "Translate myself"
+
 2. **WPML > Settings > Custom Fields Translation**:
    Seleccionar "Don't translate" para los campos de ACF.
+
 3. **WPML > String Translation**:
+
    - Si lo anterior no funciona, eliminar las strings de acf, ya que no queremos traducirlas.
+
 4. **Translation Priority**: Configurar esta opción como "Not translatable" en WPML > Settings > Taxonomies Translation, para que el combo "
+
 5. **Traducción de Taxonomías (categoría y tags)**:
    Usar la traducción de taxonomías de WPML: WPML > Taxonomy translation, ya que si se hace directamente desde, por ejemplo una categoría, va a haber que asignar todos los valores (color, bg-color, iconos, etc) para cada idioma.
 
@@ -88,6 +100,11 @@ WPML incluye un mecanismo llamado "string translation", para manejar estas caden
 
 - Cómo ocultar "Translation Priority", y, si no se puede como configurar que sea siempre obligatoria, y que aparezca en inlgés.
 
-### PhpMyAmdin
+## PhpMyAmdin
 
 - cotejamiento: latin1_swedish_ci
+
+## Licenses
+
+https://gx-blog.local/ : 7PQEug41EC
+https://staging-942c-bloggenexus.wpcomstaging.com/ : ykovgk3YwC

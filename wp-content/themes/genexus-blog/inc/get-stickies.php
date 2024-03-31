@@ -15,12 +15,10 @@ if (!function_exists('get_stickies')) {
       'post__in' => $sticky_posts,
       'post__not_in' => $excluded_sticky_main_id, //Esto evita que se muestre de nuevo el sticky_main post
       'orderby' => 'date',
+      'suppress_filters' => false
     ));    
     $aside_get_posts_cantidad = count($aside_get_posts);
     if ($aside_get_posts_cantidad < $quantity) {
-      //var_dump("hay menos que 3 sticky posts");
-      //var_dump($aside_get_posts_cantidad);
-      //var_dump($aside_get_posts);
       //Hay menos posts stickies que los solicitados ($quantity). Rellenar los faltantes, con posts comunes. 
       //1. Primero llenamos con los stickies...
       foreach ($aside_get_posts as $sticky) {
@@ -36,8 +34,10 @@ if (!function_exists('get_stickies')) {
         null,
         null
       );
-      foreach ($extra_posts->posts as $post_comun) {
-        array_push($aside_posts, $post_comun);
+      if(isset($extra_posts->posts) && count($extra_posts->posts) >= 1) {
+        foreach ($extra_posts->posts as $post_comun) {
+          array_push($aside_posts, $post_comun);
+        }
       }
     }
     else {

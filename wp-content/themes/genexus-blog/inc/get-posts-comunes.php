@@ -10,11 +10,13 @@
                 'author' => $author,
                 'posts_per_page' => $quantity,
                 'post__not_in' => $excluded_posts,
-                'orderby' => 'date',    
+                'orderby' => 'date',
+                'suppress_filters' => false
             ));
             if($posts_comunes->have_posts()){                
                 return $posts_comunes;
             } else {
+                return null;
                 //No hay posts comunes (nada que hacer).
             }
         }

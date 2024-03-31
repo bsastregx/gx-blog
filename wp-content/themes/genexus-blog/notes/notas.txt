@@ -94,24 +94,24 @@ COLORES
 *******************************/
 
 Design:
-Background: #FBD3F5
 Text Color: #A54095
+Background: #FBD3F5
 
 Events:
-Background: #BFE9D3
 Text Color: #187C48
+Background: #BFE9D3
 
 General Interest:
-Background: #FFD6DE
 Text Color: #D9506C
+Background: #FFD6DE
 
 GeneXus Platform:
-Background: #FFE0D9
 Text Color:  #FF6245
+Background: #FFE0D9
 
 Software Development:
-Background: #F3E9FA
 Text Color: #6C48C9
+Background: #F3E9FA
 
 /*************************************
 WORDRESS COMMENTS VS JETPACK COMMENTS
