@@ -97,3 +97,7 @@ Los fields estan guardados en la tabla wp-posts ("acf-field-group" y "acf-field"
    WPML > Settings > Custom Term Meta Translation
 
 8-. Eliminar los meta-keys del tipo gx_post_aside_super_sticky
+
+## TODO:
+
+- Revisar que categría se muestra si hay dos. Debería verse la principal.

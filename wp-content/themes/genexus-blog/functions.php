@@ -91,17 +91,10 @@ function count_content_words( $content ) {
 /*******************************
 6.TRANSLATIONS
 *******************************/
-require_once(__ROOT__.'/inc/translations.php');
-$lang = get_locale();
+require_once(__ROOT__.'/inc/translations.php');	
+$my_current_lang = apply_filters( 'wpml_current_language', NULL );
 $GLOBALS["gx_trans"] = new Translation();
-if($lang == 'es_ES') {
-  $GLOBALS["gx_trans"]->set_language('es_ES');
-} else if ($lang == 'pt_BR'){
-  $GLOBALS["gx_trans"]->set_language('pt_BR');
-} else {
-  //english
-  $GLOBALS["gx_trans"]->set_language('en_US');
-}
+$GLOBALS["gx_trans"]->set_language($my_current_lang);
 
 /*******************************
 7.AFTER BODY OPEN TAG
