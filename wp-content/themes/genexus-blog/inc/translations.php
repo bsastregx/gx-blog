@@ -15,8 +15,9 @@ class Translation {
 
     // set language
     function set_language($lang) {
-        if($lang == 'es_ES') {
+        if($lang == 'es') {
 
+            // Spanish
             $this->learn_more_about_genexus = 'Conoce más sobre GeneXus';
             $this->back_to_genexus = 'Vovler a genexus.com';
             $this->blog = 'Blog';
@@ -34,8 +35,9 @@ class Translation {
             $this->four04_secondary_text= 'Es posible que hayas escrito mal la dirección o que la página se haya movido.';
             $this->four04_button_text= 'Ir a la página principal';
 
-        } else if ($lang =='pt_BR') {
+        } else if ($lang =='pt-br') {
 
+            // Portuguese
             $this->learn_more_about_genexus = 'Aprenda mais sobre GeneXus';
             $this->back_to_genexus = 'Voltar para genexus.com';
             $this->blog = 'Blog';
@@ -55,7 +57,7 @@ class Translation {
 
         } else {
 
-            //en_US => English
+            // English
            $this->learn_more_about_genexus = 'Learn more about GeneXus';
            $this->back_to_genexus = 'Vovler a genexus.com';
            $this->blog = 'Blog';
