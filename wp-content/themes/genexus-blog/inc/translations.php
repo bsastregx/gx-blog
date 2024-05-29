@@ -13,12 +13,15 @@ class Translation {
     public $back_to_top;
     public $posts;
 
+    // langs para WPML: 'es', 'pt-br', 'en?' 
+    // langs para plugin actual: 'es_ES', 'pt_BR', 'en_US' 
+
     // set language
     function set_language($lang) {
-        if($lang == 'es') {
+        if($lang == 'es_ES') {
 
             // Spanish
-            $this->learn_more_about_genexus = 'Conoce más sobre GeneXus';
+            $this->learn_more_about_genexus = 'Descubre <span>La Mejor Plataforma Low-Code</span> del mundo';
             $this->back_to_genexus = 'Vovler a genexus.com';
             $this->blog = 'Blog';
             $this->categories = 'Categorías';
@@ -35,10 +38,10 @@ class Translation {
             $this->four04_secondary_text= 'Es posible que hayas escrito mal la dirección o que la página se haya movido.';
             $this->four04_button_text= 'Ir a la página principal';
 
-        } else if ($lang =='pt-br') {
+        } else if ($lang =='pt_BR') {
 
             // Portuguese
-            $this->learn_more_about_genexus = 'Aprenda mais sobre GeneXus';
+            $this->learn_more_about_genexus = 'Descubra <span>A Melhor Plataforma Low-Code</span> do mundo';
             $this->back_to_genexus = 'Voltar para genexus.com';
             $this->blog = 'Blog';
             $this->categories = 'Categorias';
@@ -58,7 +61,7 @@ class Translation {
         } else {
 
             // English
-           $this->learn_more_about_genexus = 'Learn more about GeneXus';
+           $this->learn_more_about_genexus = 'Discover <span>The Best Low-Code Platform</span> in the world';
            $this->back_to_genexus = 'Vovler a genexus.com';
            $this->blog = 'Blog';
            $this->categories = 'Categories';
