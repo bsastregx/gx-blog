@@ -21,7 +21,7 @@ class Translation {
         if($lang == 'es_ES') {
 
             // Spanish
-            $this->learn_more_about_genexus = 'Descubre <span>La Mejor Plataforma Low-Code</span> del mundo';
+            $this->learn_more_about_genexus = 'Descubre La Mejor Plataforma Low-Code';
             $this->back_to_genexus = 'Vovler a genexus.com';
             $this->blog = 'Blog';
             $this->categories = 'Categorías';
@@ -41,7 +41,7 @@ class Translation {
         } else if ($lang =='pt_BR') {
 
             // Portuguese
-            $this->learn_more_about_genexus = 'Descubra <span>A Melhor Plataforma Low-Code</span> do mundo';
+            $this->learn_more_about_genexus = 'Descubra A Melhor Plataforma Low-Code';
             $this->back_to_genexus = 'Voltar para genexus.com';
             $this->blog = 'Blog';
             $this->categories = 'Categorias';
@@ -61,7 +61,7 @@ class Translation {
         } else {
 
             // English
-           $this->learn_more_about_genexus = 'Discover <span>The Best Low-Code Platform</span> in the world';
+           $this->learn_more_about_genexus = 'Discover The Best Low-Code Platform';
            $this->back_to_genexus = 'Vovler a genexus.com';
            $this->blog = 'Blog';
            $this->categories = 'Categories';
