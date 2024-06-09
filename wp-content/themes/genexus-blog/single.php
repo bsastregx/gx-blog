@@ -60,8 +60,8 @@ endif;
     <div class="container">
 
         <?php
-            $post_edit_url = get_edit_post_link( get_the_ID());
-            echo "<a style='display:block; margin-bottom: 16px;' href='.$post_edit_url.' target='_blank'>Edit Post</a>"
+            edit_post_link(__('Edit Post'));
+            echo "<hr>";
         ?>
     
         <?php get_template_part('template-parts/post','categories', array($category)); ?>
