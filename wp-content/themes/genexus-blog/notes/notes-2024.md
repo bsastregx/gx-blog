@@ -101,3 +101,6 @@ Los fields estan guardados en la tabla wp-posts ("acf-field-group" y "acf-field"
 ## TODO:
 
 - Revisar que categría se muestra si hay dos. Debería verse la principal.
+  ej.: https://staging-942c-bloggenexus.wpcomstaging.com/events/industries-are-being-reinvented-with-software-its-time-to-reinvent-the-software-industry-itself/
+
+- Activar SSO para todos los usuarios
