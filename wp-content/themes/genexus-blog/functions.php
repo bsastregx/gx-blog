@@ -9,8 +9,7 @@ INDEX:
 5.COUNT NUMBER OF WORDS A POST HAS
 6.TRANSLATIONS
 7.AFTER BODY OPEN TAG
-8.CUSTOM REDIRECT 404
-9.CMB2 CUSTOM FIELDS
+8.CMB2 CUSTOM FIELDS
 */
 
 /*******************************
@@ -111,7 +110,7 @@ add_action('after_body_open_tag', 'custom_content_after_body_open_tag');
 
 
 /*******************************
-9.CMB2 CUSTOM FIELDS
+8.CMB2 CUSTOM FIELDS
 *******************************/
 require_once(__ROOT__.'/inc/cmb2.php');
 
