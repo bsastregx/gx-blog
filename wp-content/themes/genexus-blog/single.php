@@ -109,8 +109,27 @@ if($related_posts) { ?>
         </div>
     </div>
 </section>
-<?php } ?>
+<?php } 
 
+/*******************************
+WP ADMIN BAR
+*******************************/
 
-<?php }
+/* Add an "Edit Post" button, since in wordpress.com it does not appear TODO: Add a pen icon*/
+add_action('admin_bar_menu', 'add_admin_bar_button', 100);
+function add_admin_bar_button($admin_bar){
+    $post_edit_url = get_edit_post_link( get_the_ID());
+    $admin_bar->add_menu( array(
+        'id'    => 'custom-edit',
+        'title' => 'Edit Post',
+        'href'  => $post_edit_url,
+        'meta'  => array(
+            'class' => 'ab-item',
+            'title' => __('Edit Post'),
+            'target' => '_blank',
+        ),
+    ));
+}
+
+}
 get_footer(); ?>
