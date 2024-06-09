@@ -58,6 +58,12 @@ endif;
 
 <main class="main section">
     <div class="container">
+
+        <?php
+            $post_edit_url = get_edit_post_link( get_the_ID());
+            echo "<a style='display:block; margin-bottom: 16px;' href='.$post_edit_url.' target='_blank'>Edit Post</a>"
+        ?>
+    
         <?php get_template_part('template-parts/post','categories', array($category)); ?>
         <div class="author-reading-time">
             <?php get_template_part('template-parts/author', null, array($author_array)); ?>
@@ -110,26 +116,6 @@ if($related_posts) { ?>
     </div>
 </section>
 <?php } 
-
-/*******************************
-WP ADMIN BAR
-*******************************/
-
-/* Add an "Edit Post" button, since in wordpress.com it does not appear TODO: Add a pen icon*/
-add_action('admin_bar_menu', 'add_admin_bar_button', 100);
-function add_admin_bar_button($admin_bar){
-    $post_edit_url = get_edit_post_link( get_the_ID());
-    $admin_bar->add_menu( array(
-        'id'    => 'custom-edit',
-        'title' => 'Edit Post',
-        'href'  => $post_edit_url,
-        'meta'  => array(
-            'class' => 'ab-item',
-            'title' => __('Edit Post'),
-            'target' => '_blank',
-        ),
-    ));
-}
 
 }
 get_footer(); ?>
