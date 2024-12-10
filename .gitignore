@@ -57,7 +57,6 @@ local-xdebuginfo.php
 /_wp-content
 
 # Ignorar plugins manejados por wordpress.com
-
 /wp-content/plugins/akismet
 /wp-content/plugins/amp
 /wp-content/plugins/classic-editor
@@ -69,6 +68,7 @@ local-xdebuginfo.php
 /wp-content/plugins/full-site-editing
 /wp-content/plugins/wordpress-seo
 
+# Ignorar plugins de wpml, que son instalados por el plugin instalador
 /wp-content/plugins/sitepress-multilingual-cms
 /wp-content/plugins/wpml-string-translation
 /wp-content/plugins/wp-seo-multilingual
