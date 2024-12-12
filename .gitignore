@@ -68,9 +68,5 @@ local-xdebuginfo.php
 /wp-content/plugins/full-site-editing
 /wp-content/plugins/wordpress-seo
 
-# Ignorar plugins de wpml, que son instalados por el plugin instalador
-/wp-content/plugins/sitepress-multilingual-cms
-/wp-content/plugins/wpml-string-translation
-/wp-content/plugins/wp-seo-multilingual
-
+/wp-content/cache/*
 
