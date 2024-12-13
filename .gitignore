@@ -63,6 +63,7 @@ local-xdebuginfo.php
 /wp-content/plugins/coblocks
 /wp-content/plugins/gutenberg
 /wp-content/plugins/jetpack
+/wp-content/jetpack-waf
 /wp-content/plugins/layout-grid
 /wp-content/plugins/page-optimize
 /wp-content/plugins/full-site-editing
@@ -72,7 +73,6 @@ local-xdebuginfo.php
 /wp-content/plugins/sitepress-multilingual-cms
 /wp-content/plugins/wpml-string-translation
 /wp-content/plugins/wp-seo-multilingual
-
 
 /wp-content/cache/*
 
