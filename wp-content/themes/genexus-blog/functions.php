@@ -114,4 +114,12 @@ add_action('after_body_open_tag', 'custom_content_after_body_open_tag');
 *******************************/
 require_once(__ROOT__.'/inc/cmb2.php');
 
+
+/*******************************
+9. WP_HEADER (ADD scripts or data in the head tag on the front end.)
+*******************************/
+function custom_meta_tags() {
+  echo '<meta name="color-scheme" content="light">' . "\n";
+}
+add_action('wp_head', 'custom_meta_tags');
 ?>
